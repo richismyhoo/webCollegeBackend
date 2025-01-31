@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using webCollege.Models;
 using Telegram.Bot;
-using Telegram.Bot.Types;
 
 namespace webCollege.Controllers
 {

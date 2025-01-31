@@ -119,3 +119,6 @@ C:\Users\tarak\RiderProjects\webCollege\webCollege\bin\Debug\net8.0\ru\Microsoft
 C:\Users\tarak\RiderProjects\webCollege\webCollege\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\tarak\RiderProjects\webCollege\webCollege\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\tarak\RiderProjects\webCollege\webCollege\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tarak\RiderProjects\webCollege\webCollege\bin\Debug\net8.0\BCrypt.Net.dll
+C:\Users\tarak\RiderProjects\webCollege\webCollege\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\tarak\RiderProjects\webCollege\webCollege\obj\Debug\net8.0\webCollege.sourcelink.json

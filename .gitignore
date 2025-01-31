@@ -1,0 +1,10 @@
+﻿appsettings.json 
+
+bin/ 
+
+obj/ 
+
+*.user
+*.suo
+
+appsettings.*.json 
