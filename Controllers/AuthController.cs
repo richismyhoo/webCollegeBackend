@@ -21,7 +21,7 @@ namespace webCollege.Controllers
         {
             try
             {
-                var user = new User { Email = request.Email };
+                var user = new User { Email = request.Email, Name = request.Name, Courses = new List<string>() };
                 await _authService.Register(user, request.Password);
                 return Ok(new { Message = "Успешная регистрация" });
             }
@@ -53,6 +53,9 @@ namespace webCollege.Controllers
         
         [Required, MinLength(8)]
         public string Password { get; set; }
+        
+        [Required, MinLength(8)]
+        public string Name { get; set; }
     }
 
     public class LoginRequest

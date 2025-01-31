@@ -1,0 +1,23 @@
+﻿
+services:
+  webCollege:
+    build:
+      context: ..
+      dockerfile: webCollege/Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: web_college_api
+    depends_on:
+      - db
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    container_name: db_postgresql_container
+volumes:
+  db_data:
