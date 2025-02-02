@@ -30,6 +30,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<CourseSubscriptionService>();
+builder.Services.AddScoped<TopUsersService>();
+builder.Services.AddScoped<TaskService>();
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<TagService>();
 
 var app = builder.Build();
 
