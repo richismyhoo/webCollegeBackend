@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
+using webCollege.DTOs;
 using webCollege.Services;
 using webCollege.Models;
 
@@ -19,16 +20,20 @@ namespace webCollege.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
-            try
-            {
-                var user = new User { Email = request.Email, Name = request.Name, Courses = new List<string>() };
-                await _authService.Register(user, request.Password);
-                return Ok(new { Message = "Успешная регистрация" });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            var (success, message, userId) = await _authService.Register(request.Email, request.Password, request.Name);
+
+            if (!success)
+                return BadRequest(new { message });
+
+            return Ok(new { message, userId });
+        }
+
+        [HttpPost("verify")]
+        public async Task<IActionResult> VerifyEmail([FromBody] VerifyEmailRequestDto request)
+        {
+            var success = await _authService.VerifyEmailAsync(request.UserId, request.Code);
+            if (!success) return BadRequest(new { message = "Неверный код или срок действия кода истек" });
+            return Ok(new { message = "Email подтвержден" });
         }
         
         [HttpPost("login")]

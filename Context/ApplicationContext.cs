@@ -10,6 +10,7 @@
         public DbSet<TaskTag> TaskTags { get; set; }
         public DbSet<TaskEntity> Tasks { get; set; }
         public DbSet<UserTask> UserTasks { get; set; }
+        public DbSet<VerificationCode> VerificationCodes { get; set; }
 
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             : base(options)
