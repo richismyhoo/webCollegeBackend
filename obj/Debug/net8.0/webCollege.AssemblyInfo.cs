@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webCollege")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+548bacc66b938e129dc4664a3c12f3e6a8782953")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+858f000b883bbbb8332aff93084a9344a05b4cf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("webCollege")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webCollege")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
