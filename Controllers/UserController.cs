@@ -33,7 +33,8 @@ public class UserController : ControllerBase
             id = user.Id,
             email = user.Email,
             name = user.Name,
-            points = user.Points
+            points = user.Points,
+            courses = user.Courses.ToList()
         });
     }
 }
